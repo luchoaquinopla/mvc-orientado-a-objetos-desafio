@@ -7,7 +7,7 @@ function parseaParams(argv): ContactsControllerOptions {
 
   const action = parsed.action || null;
 
-  const { action: _, _, ...params } = parsed;
+  const { action: _, ...params } = parsed;
   return {
     action,
     params,
